@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Popup</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="position-sticky">
+        <h1>Modal Popup</h1>
+        <h2>Name : IMAYAVARAMBAN G</h2>
+    </header>
+    <main>
+        <section class="popup-button">
+            <button class="open-btn" onclick="showModal()">Click Me...!</button>
+        </section>
+    </main>
+    <div id="modalId" class="modal-wrapper">
+        <div class="modal-content">
+            <h1>This is Imay <button class="close-btn" onclick="hideModal()">Close</button></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium consectetur molestiae dicta ut nemo dignissimos, repellendus saepe obcaecati facere aliquid at natus consequatur minus reprehenderit. Adipisci ratione odio sed voluptate!</p>
+        </div>
+    </div>
+    <footer>
+        <p>Created by - Imayavaramban G</p>
+    </footer>
+    <script>
+        function showModal() {
+            document.getElementById("modalId").style.display="block";
+        }
+        function hideModal() {
+            document.getElementById("modalId").style.display="none";
+        }
+    </script>
+</body>
+</html>
